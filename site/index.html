@@ -8,54 +8,74 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header class="hero">
+  <header class="hero shell">
     <nav class="nav" aria-label="Главная навигация">
-      <a href="#principles">Принципы</a>
-      <a href="#workflow">Вклад</a>
-      <a href="#tech">Техника</a>
-      <a href="#agents">Агенты</a>
+      <a href="./index.html" aria-current="page">Главная</a>
+      <a href="./participate.html">Вклад</a>
+      <a href="./rules.html">Правила</a>
+      <a href="./moderation.html">Модерация</a>
+      <a href="./roadmap.html">Roadmap</a>
     </nav>
+
     <p class="eyebrow">Oxalis triangularis · реестр · сообщество</p>
     <h1>Сад знаний, который легко поддерживать</h1>
     <p class="lead">Мы собираем проверенные сведения о формах и сортах Oxalis triangularis: спокойно, доказательно и без тяжёлой инфраструктуры.</p>
+
     <div class="actions">
-      <a class="button" href="../CONTRIBUTING.md">Как участвовать</a>
-      <a class="button secondary" href="../docs/philosophy.md">Философия</a>
+      <a class="button" href="./participate.html">Присоединиться</a>
+      <a class="button secondary" href="./docs/philosophy.md">Философия</a>
     </div>
   </header>
 
-  <main>
-    <section id="principles" class="grid">
-      <article>
+  <main class="shell stack">
+    <section class="grid cards-grid">
+      <article class="card">
+        <p class="kicker">1. Смысл</p>
         <h2>Путь простоты</h2>
         <p>Лучшее управление почти незаметно: статический сайт, открытая история изменений и понятная очередь модерации.</p>
       </article>
-      <article>
+      <article class="card">
+        <p class="kicker">2. Качество</p>
         <h2>Качество без закрытости</h2>
         <p>Любой может предложить запись. Публикация требует источников, лицензии для фото и человеческого review.</p>
       </article>
-      <article>
+      <article class="card">
+        <p class="kicker">3. Ясность</p>
         <h2>Честная неопределённость</h2>
         <p>Спорные сведения получают статус <code>uncertain</code>, а не маскируются под окончательную истину.</p>
       </article>
     </section>
 
-    <section id="workflow" class="panel">
-      <h2>Как знание попадает на сайт</h2>
-      <ol>
-        <li>Участник отправляет форму, Issue или Pull Request.</li>
-        <li>Автоматические проверки ищут дубли, отсутствие лицензий и ошибки схемы.</li>
-        <li>Модератор задаёт вопросы или одобряет изменение.</li>
-        <li>После merge сайт обновляется автоматически.</li>
-      </ol>
+    <section class="panel split">
+      <div>
+        <p class="kicker">Как это работает</p>
+        <h2>Путь вклада</h2>
+        <ol class="steps">
+          <li>Участник отправляет форму, Issue или Pull Request.</li>
+          <li>Автоматические проверки ищут дубли, отсутствие лицензий и ошибки схемы.</li>
+          <li>Модератор задаёт вопросы или одобряет изменение.</li>
+          <li>После merge сайт обновляется автоматически.</li>
+        </ol>
+      </div>
+      <aside class="callout">
+        <p class="kicker">Быстрый вход</p>
+        <h3>Что нужно новичку</h3>
+        <ul class="list">
+          <li>1 фото или 1 запись</li>
+          <li>1 источник</li>
+          <li>1 понятный заголовок</li>
+          <li>1 прозрачная лицензия для медиа</li>
+        </ul>
+      </aside>
     </section>
 
-    <section id="tech" class="split">
+    <section class="panel split">
       <div>
-        <h2>Техническое решение</h2>
+        <p class="kicker">Техническое решение</p>
+        <h2>Лёгкий стек без лишней тяжести</h2>
         <p>На старте — обычные статические файлы. Данные живут в Git, медиа — во внешнем хранилище, обсуждения — в GitHub/форуме.</p>
       </div>
-      <ul class="cards">
+      <ul class="list cards-list">
         <li>GitHub PR/Issues как очередь</li>
         <li>GitHub Pages / Netlify / Vercel</li>
         <li>Cloudinary/S3 для фотографий</li>
@@ -63,13 +83,14 @@
       </ul>
     </section>
 
-    <section id="agents" class="panel muted">
+    <section class="panel muted">
+      <p class="kicker">Агенты</p>
       <h2>Агенты как садовые инструменты</h2>
       <p>Агенты помогают проверять данные, готовить описания, искать противоречия и ревьюить PR. Они не публикуют без людей и не выполняют опасные действия без подтверждения.</p>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer shell">
     <p>Oxalis Triangularis Community — меньше шума, больше ясного роста.</p>
   </footer>
 </body>

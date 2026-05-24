@@ -1,4 +1,4 @@
-# Oxalis Tao Community
+# Oxalis Triangularis Community
 
 Гармоничное сообщество и открытый реестр `Oxalis triangularis`: качественный сайт, умеренная модерация, простая инфраструктура и помощь агентных инструментов.
 
@@ -75,8 +75,8 @@ npm run serve
 ```bash
 git init
 git add .
-git commit -m "init oxalis tao community"
-gh repo create oxalis-tao-community --public --source=. --remote=origin --push
+git commit -m "init oxalis triangularis community"
+gh repo create oxalis-triangularis-community --public --source=. --remote=origin --push
 ```
 
 Я не выполняю публикацию без отдельного подтверждения, потому что это внешнее мутационное действие.

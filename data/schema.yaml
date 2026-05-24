@@ -1,4 +1,4 @@
-# Canonical record schema for Oxalis Tao Community
+# Canonical record schema for Oxalis Triangularis Community
 
 id: string                 # stable slug or UUID
 latin_name: Oxalis triangularis

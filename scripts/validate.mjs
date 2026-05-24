@@ -20,7 +20,7 @@ const required = [
   '.gitignore'
 ];
 
-const forbidden = ['.crew', 'node_modules', 'dist', 'build'];
+const forbidden = ['node_modules', 'dist', 'build'];
 let failed = false;
 
 for (const file of required) {

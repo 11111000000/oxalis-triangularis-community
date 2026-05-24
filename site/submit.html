@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Подать запись · Oxalis Triangularis Community</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="shell stack page">
+    <nav class="nav" aria-label="Навигация">
+      <a href="./index.html">Главная</a>
+      <a href="./participate.html">Вклад</a>
+      <a href="./submit.html" aria-current="page">Подать запись</a>
+      <a href="./rules.html">Правила</a>
+      <a href="./moderation.html">Модерация</a>
+      <a href="./roadmap.html">Roadmap</a>
+    </nav>
+
+    <section class="panel">
+      <p class="kicker">Форма</p>
+      <h1 class="page-title">Минимальная подача записи</h1>
+      <p class="lead narrow">Эта форма пока работает как удобный шаблон: она показывает нужные поля и готовит будущий поток в Issue/PR.</p>
+    </section>
+
+    <form class="panel form-grid" action="#" method="post">
+      <label>
+        <span>Название</span>
+        <input name="title" type="text" placeholder="Oxalis triangularis '...'" required>
+      </label>
+      <label>
+        <span>Краткое описание</span>
+        <textarea name="summary" rows="5" placeholder="Чем запись полезна сообществу?"></textarea>
+      </label>
+      <label>
+        <span>Источник</span>
+        <input name="source" type="url" placeholder="https://..." required>
+      </label>
+      <label>
+        <span>Фото</span>
+        <input name="media" type="url" placeholder="URL во внешнем хранилище">
+      </label>
+      <label>
+        <span>Автор фото</span>
+        <input name="author" type="text" placeholder="Имя автора">
+      </label>
+      <label>
+        <span>Лицензия</span>
+        <input name="license" type="text" placeholder="CC BY 4.0 / другое">
+      </label>
+      <label>
+        <span>Статус уверенности</span>
+        <select name="confidence">
+          <option value="draft">draft</option>
+          <option value="uncertain">uncertain</option>
+          <option value="accepted">accepted</option>
+        </select>
+      </label>
+      <label>
+        <span>Примечание для модератора</span>
+        <textarea name="note" rows="4" placeholder="Что важно проверить?"></textarea>
+      </label>
+
+      <div class="actions left">
+        <button class="button" type="submit">Подготовить заявку</button>
+        <a class="button secondary" href="./participate.html">Назад</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

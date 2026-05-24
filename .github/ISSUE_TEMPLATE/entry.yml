@@ -1,0 +1,45 @@
+name: Новая запись
+about: Предложить сорт, форму или исправление
+labels:
+  - contribution
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Название
+      description: Краткое имя записи
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Краткое описание
+      description: Что именно предлагается и почему это важно
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Источник
+      description: Ссылка на источник или наблюдение
+    validations:
+      required: true
+  - type: input
+    id: media
+    attributes:
+      label: Фото или медиа
+      description: URL во внешнем хранилище
+  - type: input
+    id: license
+    attributes:
+      label: Лицензия
+      description: Лицензия для медиа
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: Статус уверенности
+      options:
+        - draft
+        - uncertain
+        - accepted
+        - deprecated

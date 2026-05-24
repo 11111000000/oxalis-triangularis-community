@@ -92,6 +92,7 @@ h2 { line-height: 1.15; font-size: clamp(1.4rem, 3vw, 2rem); margin-top: .25rem;
 .narrow { max-width: 760px; }
 
 .actions { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+.actions.left { justify-content: flex-start; }
 .button { font-weight: 700; background: var(--leaf); color: white; border-color: transparent; }
 .button.secondary { background: transparent; color: var(--ink); border-color: var(--line); }
 
@@ -114,10 +115,41 @@ main, footer { width: min(1120px, calc(100% - 2rem)); margin-left: auto; margin-
 .cards-list { list-style: none; padding-left: 0; }
 .cards-list li { padding: .95rem 1rem; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.62); }
 .columns { columns: 2; column-gap: 2rem; }
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-grid label {
+  display: grid;
+  gap: .45rem;
+  font-weight: 600;
+}
+
+.form-grid input,
+.form-grid textarea,
+.form-grid select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: .9rem 1rem;
+  font: inherit;
+  background: rgba(255, 255, 255, .84);
+  color: var(--ink);
+}
+
+.form-grid input:focus,
+.form-grid textarea:focus,
+.form-grid select:focus {
+  outline: 2px solid rgba(127, 74, 163, .24);
+  border-color: var(--leaf-2);
+}
 .muted { background: rgba(109, 138, 93, .12); }
 .footer { text-align: center; padding: 0 0 2rem; color: var(--muted); }
 
 @media (max-width: 860px) {
-  .cards-grid, .split, .columns { grid-template-columns: 1fr; columns: 1; }
+  .cards-grid, .split { grid-template-columns: 1fr; }
+  .columns { columns: 1; }
   .hero { min-height: auto; padding-top: 2.5rem; }
 }

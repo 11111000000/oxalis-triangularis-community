@@ -10,6 +10,7 @@
 - [Roadmap](ROADMAP.md)
 - [Управление](docs/governance.md)
 - [Техническая архитектура](docs/technical-architecture.md)
+- [Подать запись](site/submit.html)
 
 ## Коротко
 
@@ -70,6 +71,8 @@ npm run serve
 
 Откройте: `http://localhost:4173`.
 
+Для шаблона подачи: `http://localhost:4173/submit.html`.
+
 ### Вариант B: dev shell
 
 ```bash
@@ -84,6 +87,7 @@ just help
 - `just serve` — запустить локальный сервер
 - `just status` — посмотреть состояние git
 - `just format` — отформатировать `flake.nix`
+- `just dev` — подсказка по короткому старту
 
 Скрипты не требуют установки зависимостей, а dev shell нужен только для удобства локальной работы.
 

@@ -1,0 +1,41 @@
+# Canonical record schema for Oxalis Tao Community
+
+id: string                 # stable slug or UUID
+latin_name: Oxalis triangularis
+cultivar_name_ru: string
+cultivar_name_en: string
+other_names:
+  - string
+status: draft              # draft|uncertain|accepted|deprecated|rejected
+confidence: medium         # low|medium|high
+summary_ru: string
+description_ru: string
+observable_traits:
+  leaf_color: string
+  flower_color: string
+  growth_habit: string
+  seasonal_notes: string
+origin:
+  breeder: string
+  country: string
+  year: integer
+  source_note: string
+care_notes_ru: string
+propagation_ru: string
+photos:
+  - url: string
+    caption_ru: string
+    photographer: string
+    license: string
+    source_url: string
+references:
+  - title: string
+    url: string
+    type: article           # article|book|community|nursery|personal|other
+moderation:
+  submitted_by: string
+  reviewed_by: string
+  review_status: pending    # pending|needs_changes|approved|rejected
+  review_notes: string
+created_at: string          # ISO datetime
+updated_at: string          # ISO datetime

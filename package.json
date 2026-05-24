@@ -1,0 +1,19 @@
+{
+  "name": "oxalis-tao-community",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A simple static community site and moderated registry concept for Oxalis triangularis.",
+  "scripts": {
+    "check": "node scripts/validate.mjs",
+    "serve": "python3 -m http.server 4173 --directory site"
+  },
+  "keywords": [
+    "oxalis",
+    "community",
+    "registry",
+    "static-site",
+    "moderation"
+  ],
+  "license": "MIT"
+}

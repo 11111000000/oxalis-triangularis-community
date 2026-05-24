@@ -5,7 +5,7 @@
   "type": "module",
   "description": "A simple static community site and moderated registry concept for Oxalis triangularis.",
   "scripts": {
-    "check": "node scripts/validate.mjs",
+    "check": "node scripts/validate.mjs && node scripts/validate-records.mjs",
     "serve": "python3 -m http.server 4173 --directory site"
   },
   "keywords": [
